@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M(8.2)Ejercicio-2</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="https://www.loom.com/share/96ec287320e14f44b7859bc3aca79531?sid=977c7fc3-cd2d-469a-b287-22ff48446302">Crear Hotels</a>
+
+</head>
+
+<body>
+    <summary>
+        <details>Nos piden crear una aplicación para dar de alta, modificar, ver y eliminar hoteles.<br><br>
+
+            La clase hotel deberá tener los siguientes atributos: nombre, número de habitaciones, número de plantas y superficie total del hotel. Como métodos sólo tendrá que tener los getters y setters propios de la clase y un método llamado calcularMantenimiento(). Este método debe tener en cuenta que cada persona del servicio puede atender a 20 habitaciones y deberá mostrar cuántas personas son necesarias para atender el servicio de habitaciones del hotel y cuál es el coste total destinado al servicio sabiendo que estas personas cobran 1.500. € al mes.<br><br>
+            
+            La función crearHotel() deberá pedir al usuario que introduzca por pantalla los datos de nombre, número de habitaciones, número de plantas y superficie total del hotel (o deberá recibir estos datos por parámetro). Una vez que haya pedido todos estos datos, debe instanciarse el objeto de la clase y añadirlo a un array de hoteles.<br><br>
+            
+            La función darDeBaixaHotel() deberá recibir el nombre del hotel que se quiere dar de baja. El usuario/a introducirá el nombre del hotel y si el hotel está dentro del array, lo eliminaremos y mostraremos un mensaje por pantalla informando al usuario/a que hemos eliminado el hotel. Si no hemos encontrado el hotel dentro del array, avisaremos al usuario diciendo que el hotel no estaba dentro de nuestra aplicación.<br><br>
+            
+            La función verHotel() deberá recibir el nombre del hotel que quiere que mostramos por pantalla, si el hotel está en nuestra aplicación, le mostraremos el hotel, si no existe, informaremos al usuario diciendo que el hotel que nos ha pedido no está dentro de nuestra aplicación.
+            Cuando mostramos el hotel, además, mostrar el número de habitaciones, número de plantas y superficie total del hotel también se llamará al método calcularMantenimiento().<br><br>
+            
+            La función modificarHotel() deberá recibir el nombre del hotel que queremos modificar. El usuario/a introducirá el nombre del hotel. Si lo tenemos en la aplicación, le preguntaremos si desea modificar el número de habitaciones, el número de plantas o la superficie total del hotel. Haremos la modificación pertinente y avisaremos al usuario de que la modificación se ha realizado.</details>
+    </summary>
+
+
+    <h1>Applicacion de Hotels</h1>
+
+    <div class="button">
+        <p><button onclick="crearHotel()">Crear Hotel</button>
+            <button onclick="mostrar()">Mostrar Hotel</button>
+            <button onclick="modificar()">Modificar Hotel</button>
+            <button onclick="eliminar()">Eliminar Hotel</button>
+        </p>
+    </div>
+    <div id="output">
+        <h3 id="result"></h3>
+    </div>
+   <!-- <img id="image1" src="hotel1.jpg" alt="hotel1 image"  height="500" width="500"/>
+    <img id="image2" src="hotel2.jpg" alt="hotel2 image"  height="400" width="450"/>
+    <img id="image3" src="hotel.jpg" alt="hotel image"  height="500" width="500"/>-->
+
+    <script src=".js/classHotel.js"></script>
+    <script src=".js/main.js"></script>
+</body>
+
+</html>
